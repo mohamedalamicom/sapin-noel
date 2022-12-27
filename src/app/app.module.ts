@@ -7,8 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ShoppingComponent } from './shopping/shopping.component';
-import { LoginGuard } from './_guards/LoginGuard';
 import { LoginService } from './_services/loginService';
+import { LoginGuard } from './_guards/LoginGuard';
 
 @NgModule({
   declarations: [
@@ -23,8 +23,8 @@ import { LoginService } from './_services/loginService';
     HttpClientModule
   ],
   providers: [
-    LoginGuard,
-    LoginService
+    LoginService,
+    LoginGuard
   ],
   bootstrap: [AppComponent]
 })
